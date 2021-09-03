@@ -1,4 +1,15 @@
+#Home {
+    height: 100%;
+}
+
 #Top-Image {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 400px;
+}
+
+.Project-Images {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
 }
