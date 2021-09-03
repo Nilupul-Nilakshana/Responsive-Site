@@ -6,32 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="Styles/Style.css">
-    <title>Nilupul Nilakshana - Responsive SIte </title>
+    <title>Document</title>
 </head>
 <body>
+
+    <div class="w3-bar w3-red">
+        <a href="#Home" class="w3-bar-item w3-button">Home</a>
+        <a href="#Project" class="w3-bar-item w3-button w3-hide-small">Project</a>
+        <a href="#About" class="w3-bar-item w3-button w3-hide-small">About</a>
+        <a href="#Contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+        <a href="#Project" class="w3-bar-item w3-button">Project</a>
+        <a href="#About" class="w3-bar-item w3-button">About</a>
+        <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
     
     <div class="w3-container ">
         <div class="w3-center w3-margin-top w3-teal">
-            <img src="https://scontent.xx.fbcdn.net/v/t1.6435-9/238944810_353291342943071_6973360578710353630_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Zi3Zk-teHiUAX8hAAZw&_nc_ht=scontent.xx&oh=7f8435e75292f6cf74ff8af14ef5ed80&oe=6156D008" class="w3-margin-top" id="Top-Image"> <br>
+            <img src="Images/Nilupul-Nilakshana.png" class="w3-margin-top" id="Top-Image"> <br>
             <h1 class="w3-monospace w3-text-black"> I'm Nilupul Nilakshana </h1>
             <h3 class="w3-monospace"> Tech Enthusiasts 💻 | Lover 👩‍❤️‍💋‍👨 | Student 📔 | Buddhism ☸️ | Sri Lankan &#127473;&#127472; | Friendly 🙆‍♂️ | Night Owl 🌌 <br> <br> </h3>
         </div>
     </div>
 
-    <div class="w3-bar w3-red">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-      </div>
-      
-      <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-      </div>
 
 
+      <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
 </body>
 </html>
